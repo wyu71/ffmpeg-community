@@ -1,3 +1,11 @@
+ffmpeg (7:6.1.5-0deepin2) unstable; urgency=medium
+
+  * CVE-2026-8461: Fix heap out-of-bounds write in MagicYUV decoder
+    Move slice_height validation outside of interlaced-only block to catch
+    odd slice_height values in progressive mode that trigger heap OOB write.
+
+ -- deepin-ci-robot <packages@deepin.org>  Wed, 24 Jun 2026 19:55:10 +0800
+
 ffmpeg (7:6.1.5-0deepin1) unstable; urgency=medium
 
   * Import upstream version 6.1.5.
